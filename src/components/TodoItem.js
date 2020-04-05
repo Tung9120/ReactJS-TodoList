@@ -5,7 +5,8 @@ function TodoItem(){
 
     return(
         <div className="TodoItem" style={myStyle}>
-            Learn code at home
+            <p>Learn code at home</p>
+            <p>Leave to work to avoid covid-19</p>
         </div>
     );
 }
