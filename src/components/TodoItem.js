@@ -1,14 +1,25 @@
 import React from 'react';
 
-function TodoItem(){
-    let myStyle = {fontStyle: 'Italic', backgroundColor: 'red'}; 
+// function TodoItem(props){
+//     let myStyle = {fontStyle: 'Italic'}; 
 
-    return(
-        <div className="TodoItem" style={myStyle}>
-            <p>Learn code at home</p>
-            <p>Leave to work to avoid covid-19</p>
-        </div>
-    );
+//     return(
+//         <div className="TodoItem" style={myStyle}>
+//             <p>{props.title}</p>
+//         </div>
+//     );
+//}
+
+class TodoItem extends React.Component{
+    render(){
+        let myStyle = {fontStyle: 'Italic'};
+
+        return(
+            <div className="TodoItem" style={myStyle}>
+                <p>{this.props.title}</p>
+            </div>
+        );
+    }
 }
 
 export default TodoItem;
