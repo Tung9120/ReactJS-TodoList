@@ -15,8 +15,9 @@ class App extends React.Component{
   render(){
     return(
       <div className="App">
-        {
-          this.TodoItem.map((item, index) => <TodoItem key={index} item={item} />)
+        { this.TodoItem.length 
+          ? this.TodoItem.map((item, index) => <TodoItem key={index} item={item} />)
+          : <p>Nothing here.</p>
         }
       </div>
     );
