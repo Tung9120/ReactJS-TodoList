@@ -1,29 +1,20 @@
-import React from 'react';
-import './TodoItem.css';
-import classNames from 'classnames';
+import React from "react";
+import "./TodoItem.css";
+import classNames from "classnames";
 
-class TodoItem extends React.Component{
+class TodoItem extends React.Component {
 
-    constructor(props){
-        super(props);
-        this.onItemClick = this.onItemClick.bind(this);
-    }
-
-    onItemClick(){
-        console.log(this.props.item);
-    }
-
-    render(){
-        const { item } = this.props;
-
-        return(
-            <div onClick={this.onItemClick} className= { classNames('TotoItem', {
-                'TodoItem-complete': item.isComplete
-            })}>
-                <p>{ item.title }</p>
-            </div>
-        );
-    }
+  render() {
+    const { item, onClick } = this.props;
+    return (
+      <div className={classNames("TotoItem", {
+          "TodoItem-complete": item.isComplete,
+        })} onClick={onClick}
+      >
+        <p>{item.title}</p>
+      </div>
+    );
+  }
 }
 
 export default TodoItem;
