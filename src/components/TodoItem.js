@@ -18,7 +18,7 @@ class TodoItem extends React.Component {
           "TodoItem-complete": item.isComplete,
         })} 
       >
-        <img src={url} onClick={onClick} />
+        <img src={url} onClick={onClick} alt="test" />
         <p>{item.title}</p>
       </div>
     );

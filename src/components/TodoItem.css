@@ -8,9 +8,8 @@
 }
 
 .TodoItem > p{
-    margin: 0;
+    margin: 0 15px;
     padding: 10px 5px;
-    margin: 0 auto;
 }
 
 .TodoItem > img{

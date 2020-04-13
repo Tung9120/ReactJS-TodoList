@@ -5,3 +5,21 @@
   border-radius: 5px;
 }
 
+.App .Header{
+  border-bottom: 1px solid #bebebe;
+  padding: 10px 5px;
+  display: flex;
+}
+
+.App .Header input{
+    font-size: 18px;
+    font-weight: 300;
+    color: #4d4d4d;
+    padding: 5px 10px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.App .Header img{
+    margin-left: 18px;
+}
